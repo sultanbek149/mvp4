@@ -6,7 +6,7 @@
     "dev": "nuxt dev",
     "build": "nuxt build",
     "preview": "nuxt preview",
-    "prisma:generate": "node node_modules/@prisma/cli/build/index.js generate",
+    "postinstall": "node node_modules/@prisma/client/scripts/postinstall.js || true",
     "db:migrate": "prisma migrate dev",
     "db:seed": "node prisma/seed.js",
     "db:studio": "prisma studio",
